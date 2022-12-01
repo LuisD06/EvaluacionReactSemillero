@@ -43,6 +43,7 @@ export const ToDoList = () => {
             }).then(response => {
                 if (response.data.success) {
                     handleUpdate();
+                    setError(false);
                 }else {
                     setError(true);
                 }
